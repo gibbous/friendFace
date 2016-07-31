@@ -7,21 +7,90 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <style type="text/css">
+        .form-control:focus {
+            border-color: #d9534f;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
+          }
+      </style>
 
     </head>
     <body>
+    <div class = "container">
+    <h2> All About You</h2>
+      <div class="form-group">
+        <label for="user">Name (Required)</label>
+        <input type="text" class="form-control" id="user">
+      </div>
+     <div class="form-group">
+        <label for="photo">Link to Photo (Required)</label>
+        <input type="text" class="form-control" id="photo">
+      </div>
+    <hr>
+
+    <div class="row">
+      <div class="col-xs-6 col-md-6 col-lg-6">
     <!--Survey -->
-    <div class="form-group">
-       <label for="one">Select list:</label>
-        <select class="form-control" id="one">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <div class="form-group">
+           <label for="q1"><h4>Cookies are the answer to everything.</h4></label>
+            <select class="form-control" id="q1">
+             <option value="">- Please Select -</option>
+              <option value="1">1 - Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3 - meh</option>
+              <option value="4">4</option>
+              <option value="5">5 - Strongly Agree</option>
+            </select>
+    
+          <label for="q2"><h4>One friend's trash is another friend's treasure.</h4></label>
+            <select class="form-control" id="q2">
+             <option value="">- Please Select -</option>
+              <option value="1">1 - Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3 - meh</option>
+              <option value="4">4</option>
+              <option value="5">5 - Strongly Agree</option>
+            </select>
+
+             
+             <label for="q3"><h4>I wanna rock and roll all night and party every day.</h4></label>
+            <select class="form-control" id="one">
+             <option value="">- Please Select -</option>
+              <option value="1">1 - Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3 - meh</option>
+              <option value="4">4</option>
+              <option value="5">5 - Strongly Agree</option>
+            </select>
+
+             
+
+              <label for="one"><h4>Science is awesome but also frightening.</h4></label>
+            <select class="form-control" id="one">
+             <option value="">- Please Select -</option>
+              <option value="1">1 - Strongly Disagree</option>
+              <option value="2">2</option>
+              <option value="3">3 - meh</option>
+              <option value="4">4</option>
+              <option value="5">5 - Strongly Agree</option>
+            </select>
+
+             <h4>I prefer a tidy, quiet living space.</h4>
+
+             <h4>It is important to be able to count on your friends.</h4>
+
+             <h4>I enjoy spending time with my imaginary friends.</h4>
+
+             <h4>I would go near and far to find a friend.</h4>
+
+             <h4>With good friends, you can't lose.</h4>
+
+             <h4>After a long day, I enjoy a nice bubble bath.</h4>
+        </div>
+      </div>
     </div>
 
+    <button type="button" class="btn btn-danger btn-lg btn-block"><span class="glyphicon glyphicon-thumbs-up"></span> Submit</button>
     <!--Modal for Friend results -->
     <div class="modal fade">
       <div class="modal-dialog" role="document">

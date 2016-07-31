@@ -21,3 +21,18 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.listen(PORT, function(){
   console.log('App listening on PORT ' + PORT);
 })
+
+// Routes
+// =============================================================
+
+//A GET Route to /survey which should display the survey page.
+app.get('/survey', function(req, res){
+  res.sendFile(path.join(__dirname, 'app/public/survey.html'));
+})
+
+//A default USE route that leads to home.html which displays the home page.
+
+app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname, 'app/public/home.html'));
+})
+

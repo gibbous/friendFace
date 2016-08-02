@@ -1,8 +1,7 @@
 
-
 // Available Friend Matches (DATA)
 // =============================================================
-var friends = [
+var friendsArray = [
 
   {
     name: "Animal",
@@ -58,3 +57,4 @@ var friends = [
 
 ];
 
+module.exports = friendsArray;

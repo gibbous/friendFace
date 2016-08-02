@@ -1,3 +1,7 @@
+//require the Friends data
+var friendData = require('../data/friends.js');
+var path = require('path');
+
 //A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
 app.get('/api/', function(req, res){
 

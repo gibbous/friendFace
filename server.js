@@ -36,3 +36,7 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'app/public/home.html'));
 })
 
+//a GET route to the friends list
+app.get('/api/friends', function(req, res){
+  res.sendFile(path.join(__dirname, 'app/data/friends.js'));
+})
